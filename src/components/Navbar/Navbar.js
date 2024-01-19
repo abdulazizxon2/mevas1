@@ -1,4 +1,4 @@
-function Navbar({ cart, son, activeBtn }) {
+function Navbar({ cart, son, activeBtn, likeActive }) {
   return (
     <nav>
       <div className="firstline_in_navbar">
@@ -31,8 +31,12 @@ function Navbar({ cart, son, activeBtn }) {
             <p>1800-000-000</p>
           </div>
           <div className="like_box_in_Navbar">
-            <i class="fa-regular fa-heart"></i>
-            <h1>{son}</h1>
+            <button className="like-bor" onClick={likeActive}>
+              <i class="fa-regular fa-heart"></i>
+              <span className={son ? "sonlar" : "sonlarsiz"}>
+                {son ? son : ""}
+              </span>
+            </button>
           </div>
         </div>
         <div className="user_box_in_navbar">

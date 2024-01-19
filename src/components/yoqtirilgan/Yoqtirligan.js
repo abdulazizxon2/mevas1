@@ -1,9 +1,12 @@
 import React from "react";
 
-export default function Yoqtirligan({ data }) {
+export default function Yoqtirligan({ data,activeWins, closeLike }) {
+  console.log(activeWins)
   let malumotlar = data.filter((p) => p.like === true);
   return (
     <>
+    <div className={activeWins ? "open-carts" : "close-carts"}>
+      <button  className="closes" onClick={closeLike}>close</button>
       <table border={1}>
         <thead>
           <tr>
@@ -41,6 +44,7 @@ export default function Yoqtirligan({ data }) {
           )}
         </tbody>
       </table>
+    </div>
     </>
   );
 }

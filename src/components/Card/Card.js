@@ -1,4 +1,4 @@
-function Card({ item, images, state, setState, handleCart }) {
+function Card({ item, images, state, setState, handleCart}) {
   function handleMinus(item) {
     if (item.count > 1) {
       setState(

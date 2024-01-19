@@ -8,6 +8,7 @@ export default function Cart({ cart, setCart, activeWin, closeCart }) {
   return (
     <>
       <div className={activeWin ? "open-cart" : "close-cart"}>
+        <button className="closes" onClick={closeCart}>close</button>
         <table border={1} >
           <thead>
             <tr>

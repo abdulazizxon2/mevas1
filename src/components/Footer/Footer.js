@@ -28,39 +28,39 @@ function Footer() {
             <h1>Useful link</h1>
             <ul>
               <li>
-                <a href="#">About Us </a>
+                About Us 
               </li>
 
               <li>
-                <a href="#">About Our Shop</a>
+                About Our Shop
               </li>
 
               <li>
-                <a href="#">Delivery infomation</a>
+                Delivery infomation
               </li>
 
               <li>
-                <a href="#">Privacy Policy</a>
+                Privacy Policy
               </li>
 
               <li>
-                <a href="#">Our Sitemap</a>
+                Our Sitemap
               </li>
             </ul>
           </div>
           <div className="other_ul_card_in_footer">
             <ul>
               <li>
-                <a href="#">Home</a>
+                Home
               </li>
               <li>
-                <a href="#">product</a>
+                product
               </li>
               <li>
-                <a href="#">contact</a>
+                contact
               </li>
               <li>
-                <a href="#">stories</a>
+                stories
               </li>
             </ul>
           </div>

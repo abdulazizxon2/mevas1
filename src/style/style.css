@@ -795,8 +795,56 @@ th {
   padding: 7px;
   display: flex;
   align-items: center;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin-left: 130px;
 }
 tbody td{
   text-align: center;
   text-transform: capitalize;
+  font-size: 25px;
+}
+.closes{
+  background-color: red;
+  position: absolute;
+  top: 30px;
+  font-size: 30px;
+  padding: 7px;
+  color: white;
+  border-radius: 5px;
+}
+.sonlar{
+  position: absolute;
+  background-color: red;
+  padding: 3px 7px;
+  border-radius: 15px ;
+}
+.like-bor i{
+  font-size: 20px;
+}
+.open-carts{
+  position: fixed;
+  z-index: 10000;
+  opacity: 1000;
+  background: rgba(34, 33, 33, 0.568);
+  width: 1920px;
+  top: 0;
+  padding: 100vh 0px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.open-carts table {
+  background-color: rgba(73, 41, 41, 0.877);
+  color: white;
+  border: #cecece;
+  position: absolute;
+  
+  top: 600px;
+  width: 1300px;
+}
+.close-carts{
+  display: none;
 }

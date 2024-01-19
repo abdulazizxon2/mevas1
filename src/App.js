@@ -321,24 +321,42 @@ function App() {
   };
   let [activeWin, setActiveWin] = useState({
     cart: false,
+    like: false,
   });
-  
+
   function cartActive() {
     setActiveWin({ ...activeWin, cart: !activeWin.cart });
   }
   function closeCart() {
     setActiveWin({ ...activeWin, cart: !activeWin.cart });
   }
+  function likeActive() {
+    setActiveWin({ ...activeWin, like: !activeWin.like });
+  }
+  function closeLike() {
+    setActiveWin({ ...activeWin, like: !activeWin.like });
+  }
+
   return (
     <div className="App">
       <>
-        <Cart cart={cart} setCart={setCart} activeWin={activeWin.cart} closeCart={closeCart}/>
-        <Yoqtirligan data={[...state, ...vegab, ...Add]} />
+        <Cart
+          cart={cart}
+          setCart={setCart}
+          activeWin={activeWin.cart}
+          closeCart={closeCart}
+        />
+        <Yoqtirligan
+          data={[...state, ...vegab, ...Add]}
+          closeLike={closeLike}
+          activeWins={activeWin.like}
+        />
         <Start />
         <Navbar
           cart={cart}
           son={[...state, ...vegab, ...Add].filter((p) => p.like).length}
           activeBtn={cartActive}
+          likeActive={likeActive}
         />
         <Discout />
         <Categories massiv={categories} />
