@@ -1,0 +1,15 @@
+.box {
+  .boxer {
+    &:hover {
+    }
+    &:active {
+    }
+    & > h1 {
+      &:hover {
+      }
+      span {
+        background-color: red;
+      }
+    }
+  }
+}
